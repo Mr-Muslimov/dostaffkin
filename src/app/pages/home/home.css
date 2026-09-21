@@ -1,0 +1,210 @@
+/* НАСТРОЙКИ ГЛАВНОЙ СТРАНИЦЫ САЙТА */
+.container {
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+/* ОСНОВНОЙ КОНТЕНТ ГЛАВНОЙ СТРАНИЦЫ */
+.main {
+    padding: 111px 40px 40px;
+    position: relative;
+    display: flex;
+}
+
+/* ЛЕВАЯ ЧАСТЬ САЙТА */
+.main-info {
+    max-width: 840px;
+    width: 100%;
+    position: relative;
+}
+
+/* ЗАГОЛОВОК ЛЕВОЙ ЧАСТИ ГЛАВНОЙ СТРАНИЦЫ */
+.main-title {
+    margin-top: 98px;
+    font-weight: 500;
+    font-size: 200px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #111111;
+    left: -15px;
+    position: relative;
+}
+
+.main-title span {
+    color: #ffcc00;
+}
+
+/* ПРЕИМУЩЕСТВА САЙТА */
+.main-features {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main-feature {
+    background: #111111;
+    color: #ffffff;
+    padding: 12px 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    border-radius: 10px;
+}
+
+/* ОПИСАНИЕ САЙТА */
+.main-description {
+    margin-top: 50px;
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 1.1;
+    color: #111111;
+}
+
+/* СТИЛИ ДЛЯ КНОПОК ГЛАВНОЙ СТРАНИЦЫ */
+.main-actions {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-actions .button {
+    height: 80px;
+    width: 433px;
+    font-size: 18px;
+    font-weight: bold;
+    place-items: center;
+    display: grid;
+}
+
+/* СТИЛИ ДЛЯ ПОЛУПРОЗРАЧНОГО ЗАГОЛОВКА В ЛЕВОЙ ЧАСТИ СТРАНИЦЫ */
+.main-title-ghost {
+    position: absolute;
+    z-index: -1;
+    left: -70px;
+    bottom: -150px;
+    font-weight: 500;
+    font-size: 278px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #ECEDF04D;
+}
+
+/* ПРАВАЯ ЧАСТЬ ГЛАВНОЙ СТРАНИЦЫ */
+.main-image {
+    width: 1024px;
+    top: 100px;
+    z-index: -2;
+}
+
+.main-image img {
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+    display: block;
+}
+
+/* АДАПТИВ ПОД РАЗРЕШЕНИЯ ЭКРАНА 1760PX */
+@media (max-width: 1760px) {
+    .main-title {
+        font-size: 150px;
+        left: -7px;
+    }
+
+    .main-info {
+        max-width: 640px;
+    }
+}
+
+/* АДАПТИВ ПОД РАЗРЕШЕНИЯ ЭКРАНА 1200PX  */
+@media (max-width: 1200px) {
+    .main-info {
+        max-width: 540px;
+    }
+
+    .main {
+        padding: 111px 20px 20px;
+    }
+
+    .main-title {
+        font-size: 120px;
+        left: -4px;
+    }
+
+    .main-title-ghost {
+        font-size: 220px;
+    }
+}
+
+/* АДАПТИВ ПОД РАЗРЕШЕНИЯ ЭКРАНА 1024PX   */
+@media (max-width: 1024px) {
+    .main-title {
+        margin-top: 30px;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .main-image {
+        max-width: 350px;
+        position: absolute;
+        left: 370px;
+        top: 370px;
+    }
+
+    .main-info {
+        max-width: 100%;
+    }
+
+    .main-actions {
+        gap: 10px;
+    }
+
+    .main-actions .button {
+        height: 50px;
+        font-size: 14px;
+        width: auto;
+        max-width: 300px;
+    }
+
+    .main-description {
+        max-width: 350px;
+    }
+}
+
+/* АДАПТИВ ПОД РАЗРЕШЕНИЯ ЭКРАНА 570PX */
+@media (max-width: 570px) {
+    .main-title {
+        font-size: 88px;
+    }
+
+    .main-description {
+        max-width: 100%
+    }
+
+    .main-actions {
+       width: 100%;
+    }
+
+    .main-actions .button {
+        width: 100%;
+        max-width: 100%
+    }
+
+    .main-image {
+        max-width: 650px;
+        position: absolute;
+        left: 170px;
+        top: 70px;
+        opacity: 0.2;
+    }
+}
+
+/* АДАПТИВ ПОД РАЗРЕШЕНИЯ ЭКРАНА 400PX */
+@media (max-width: 400px) {
+    .main-title {
+        font-size: 70px;
+    }
+}
